@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5D69E;
+}
+
+#main {
+    margin: 30px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    height: 100vh;
+
+    position: relative;
+    overflow: hidden;
+    
+  box-shadow:0px 3px 4px 8px rgba(0, 0, 0, 0.466) ;
+}
+
+#main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(https://images.unsplash.com/photo-1690983326252-ce6205fb7055?q=80&w=960&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+ filter: blur(3px);  
+  z-index: -1;}
+
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        /* position: absolute;
+inset: 0; */
+        color: white;
+        padding: 20px;
+        align-items: center;
+        /* overflow: hidden; */
+
+    }
+
+    nav ul {
+        display: flex;
+        gap: 10px;
+        list-style: none;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        transition: all 0.3s linear;
+
+
+    }
+
+    nav ul li a:hover {
+        color: brown;
+        border-bottom: 2px solid brown;
+
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .logo p {
+        font-size: 12px;
+    }
+
+    .hero {
+        color: white;
+        padding: 150px 60px 30px;
+        width: 623px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 19px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+        font-weight: normal;
+        transform: translateX(12px);
+        transition: all 0.3s linear;
+        overflow: hidden;
+        animation: moving 3s linear infinite;
+    }
+
+    @keyframes moving {
+
+        0% {
+            transform: translateY(0)
+        }
+
+        50% {
+            transform: translateY(-20px)
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    button {
+        background-color: #B68C4D;
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        font-size: 12px;
+
+        cursor: pointer;
+        border-radius: 20px;
+        transition: all 0.3s linear;
+    }
+
+    button:hover {
+        background-color: #c21818;
+        transform: translateY(5px);
+        cursor: pointer;
+        box-shadow: 0px 0px 1px 4px rgba(165, 42, 42, 0.623);
+        color: #1111108f;
+
+
+    }
