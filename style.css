@@ -138,3 +138,36 @@ inset: 0; */
 
 
     }
+    @media (max-width:600px){
+       .nav-list{
+            display: none;
+        }
+         .hero {
+        color: white;
+        padding: 110px 15px 30px;
+        width: 100%;
+        text-align: center;
+    }
+    .hero h1 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+        font-weight: normal;
+        transform: translateX(12px);
+        transition: all 0.3s linear;
+        overflow: hidden;
+        animation: none;
+        color: #fffdfd;
+    }
+    }
+        
+
+    
+        
+    
